@@ -17,7 +17,7 @@
 
 **To get the local copy of the project up and running you will need to run the following commands on your terminal:**
 
-`git clone https://github.com/barackm/tasks-list`
+`https://github.com/moise10r/Todo-task-List.git`
 
 To install all the available dependecies run:
 `npm install`
