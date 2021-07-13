@@ -4,7 +4,7 @@ import { getTask } from './data';
 const taskList = document.querySelector('.task-list-container');
 
 getTask().forEach((task) => {
-	taskList.innerHTML += `<li class=" container task flex-center">
+  taskList.innerHTML += `<li class=" container task flex-center">
   <span class="left">
     <input id=${task.index} type="checkbox" />
     <label for=${task.index}>${task.description}</label>
