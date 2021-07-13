@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -53,10 +54,6 @@ i {
   justify-content: space-between;
 }
 
-.task-list .container:first-child i {
-  font-size: 1rem;
-  cursor: pointer;
-}
 .task-list-container {
   width: 100%;
 }
@@ -71,17 +68,23 @@ i {
 
 .task-list-container .task {
   width: 100%;
-  justify-content:space-between
+  justify-content: space-between;
 }
+
 .task-list-container .task i {
   font-size: 1rem;
   color: rgb(102, 99, 99);
 }
 
+.task-list .container:first-child i {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 .task-list-container .task .left label {
   margin-left: 0.7rem;
   font-size: 1rem;
-  color:rgb(56, 54, 54);
+  color: rgb(56, 54, 54);
   cursor: pointer;
 }
 

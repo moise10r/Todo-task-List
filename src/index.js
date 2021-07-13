@@ -2,9 +2,6 @@ import './style.css';
 import { getTask } from './data';
 
 const taskList = document.querySelector('.task-list-container');
-console.log(taskList);
-
-console.log(getTask());
 
 getTask().forEach((task) => {
 	taskList.innerHTML += `<li class=" container task flex-center">
