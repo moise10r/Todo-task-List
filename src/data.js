@@ -6,12 +6,12 @@ export const data = [
 		completed: false,
 	},
 	{
-		index: 0,
+		index: 1,
 		description: 'Design the home and about pages',
 		completed: false,
 	},
 	{
-		index: 0,
+		index: 2,
 		description: 'Fix linter errors',
 		completed: false,
 	},
