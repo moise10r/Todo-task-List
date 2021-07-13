@@ -13,8 +13,7 @@
 	"rules": {
 		"no-shadow": "off",
 		"no-param-reassign": "off",
-		"eol-last": "off",
-		"indent": ["off ", 2]
+		"eol-last": "off"
 	},
 	"ignorePatterns": ["dist/", "build/"]
 }
