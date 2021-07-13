@@ -43,7 +43,7 @@ i {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-.task-list li {
+.task-list .container {
   flex-direction: row;
   padding: 1rem 0.9rem;
   width: 100%;
@@ -51,11 +51,13 @@ i {
   justify-content: space-between;
 }
 
-.task-list li:first-child i {
+.task-list .container:first-child i {
   font-size: 1rem;
   cursor: pointer;
 }
-
+.task-list-container {
+  width: 100%;
+}
 .task-list .add-task input {
   width: 100%;
   font-family: 'Roboto', sans-serif;
@@ -63,12 +65,17 @@ i {
   font-size: 1rem;
   font-weight: 300;
 }
-.task-list .task i {
+
+.task-list-container .task {
+  width: 100%;
+  justify-content:space-between
+}
+.task-list-container .task i {
   font-size: 1rem;
   color: rgb(102, 99, 99);
 }
 
-.task-list .task .left label {
+.task-list-container .task .left label {
   margin-left: 0.7rem;
   font-size: 1rem;
   color:rgb(56, 54, 54);

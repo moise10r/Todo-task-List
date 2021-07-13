@@ -16,3 +16,7 @@ export const data = [
 		completed: false,
 	},
 ];
+
+export function getTask() {
+	return data.map((task) => task);
+}
