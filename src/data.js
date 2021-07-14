@@ -26,8 +26,6 @@ clearTask.addEventListener('click', () => {
   if (data.length > 0) {
     localStorage.clear('Task-list');
     location.reload();
-  } else {
-    alert('Local storage is empty');
   }
 });
 
