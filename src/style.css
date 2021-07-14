@@ -81,11 +81,10 @@ i {
   cursor: pointer;
 }
 
-.task-list-container .task .left label {
-  margin-left: 0.7rem;
+.task-list-container .task .left .edit-task {
+  padding-left: 0.7rem;
   font-size: 1rem;
   color: rgb(56, 54, 54);
-  cursor: pointer;
 }
 
 .title {

@@ -17,6 +17,14 @@ export const data = [
   },
 ];
 
+class Task {
+  constructor(description) {
+    this.description = description;
+    this.index = 0;
+    this.completed = false;
+  }
+}
+
 export function getTask() {
   return data.map((task) => task);
 }
