@@ -5,7 +5,7 @@
 class Task {
   constructor(description) {
     this.description = description;
-    this.index = 0;
+    this.index = new Date();
     this.completed = false;
   }
 }

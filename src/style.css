@@ -85,6 +85,10 @@ i {
 .task-list-container .task .left {
   width: 90%;
 }
+
+.task-list-container .task .left form {
+  width: 100%;
+}
 .task-list-container .task .left .edit-task {
   padding-left: 0.7rem;
   font-size: 1rem;
