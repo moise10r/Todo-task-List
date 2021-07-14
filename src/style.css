@@ -69,6 +69,7 @@ i {
 .task-list-container .task {
   width: 100%;
   justify-content: space-between;
+  padding: 1rem 0.9rem;
 }
 
 .task-list-container .task i {
@@ -81,10 +82,15 @@ i {
   cursor: pointer;
 }
 
+.task-list-container .task .left {
+  width: 90%;
+}
 .task-list-container .task .left .edit-task {
   padding-left: 0.7rem;
   font-size: 1rem;
-  color: rgb(56, 54, 54);
+  color: rgb(68, 67, 67);
+  flex: 1;
+  margin-left: 0.5rem;
 }
 
 .title {
