@@ -3,14 +3,15 @@
 import './style.css';
 import { getTask } from './data';
 import { updateTask } from './updateTask';
+import { dragDrop } from './dragDrop';
 
-const taskList = document.querySelector('.task-list-container');
+export const taskList = document.querySelector('.task-list-container');
 
 function getInputValue(task) {
   return task.description;
 }
 getTask().forEach((task) => {
-  taskList.innerHTML += `<li class="  task flex-center">
+  taskList.innerHTML += `<li class="container task flex-center" draggable="true">
   <span class="left flex-center">
     <input id=${task.index} type="checkbox" ${
   task.completed ? 'checked' : ''
@@ -18,8 +19,8 @@ getTask().forEach((task) => {
     <form class="edit-form" action="/">
     <input data-index-number=${task.index} value='${getInputValue(
   task,
-)}' class="${task.completed ? ('edit-task disabled') : ('edit-task')}" ${
-  task.completed ? ('disabled') : ('')
+)}' class="${task.completed ? 'edit-task disabled' : 'edit-task'}" ${
+  task.completed ? 'disabled' : ''
 } ></form>
   </span>
   <span class="right">
@@ -28,6 +29,7 @@ getTask().forEach((task) => {
 </li>`;
 });
 
+export const task = document.querySelectorAll('.task');
 export const editTask = document.querySelectorAll('.edit-task');
 const editForm = document.querySelectorAll('.edit-form');
 
@@ -48,4 +50,5 @@ editForm.forEach((form) => {
 export const checkbox = document.querySelectorAll('.checkbox');
 window.addEventListener('load', () => {
   updateTask();
+  dragDrop();
 });

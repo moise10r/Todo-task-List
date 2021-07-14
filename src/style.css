@@ -41,7 +41,7 @@ i {
 
 .task-list {
   flex-direction: column;
-  width: 35%;
+  width: 40%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   border-radius: 0.5rem;
 }
@@ -70,6 +70,7 @@ i {
   width: 100%;
   justify-content: space-between;
   padding: 1rem 0.9rem;
+  cursor: move;
 }
 
 .task-list-container .task i {
@@ -120,4 +121,8 @@ i {
   font-size: 0.6rem;
   color: red;
   font-style: italic;
+}
+
+.dragging {
+  border: 2px solid #0874fb;
 }
