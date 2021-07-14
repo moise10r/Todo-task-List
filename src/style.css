@@ -68,15 +68,26 @@ i {
   background-color: transparent;
 }
 
+.task-list-container .task i {
+  font-size: 1rem;
+  color: rgb(102, 99, 99);
+}
+
+.task-list .container:first-child i {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 .task-list #add-task button i {
- font-size: 0.8rem;
- color: #ccc;
- transform: rotate(90deg);
+  font-size: 0.8rem;
+  color: #ccc;
+  transform: rotate(90deg);
 }
 
 .task-list #add-task button i:hover {
   color: rgb(104, 100, 100);
 }
+
 .task-list #add-task input {
   flex: 1;
   font-family: 'Roboto', sans-serif;
@@ -90,16 +101,6 @@ i {
   justify-content: space-between;
   padding: 1rem 0.9rem;
   cursor: move;
-}
-
-.task-list-container .task i {
-  font-size: 1rem;
-  color: rgb(102, 99, 99);
-}
-
-.task-list .container:first-child i {
-  font-size: 1rem;
-  cursor: pointer;
 }
 
 .task-list-container .task .left {
