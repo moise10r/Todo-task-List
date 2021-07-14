@@ -17,15 +17,17 @@
 			<div class="task-list flex-center">
 				<div class="container flex-center">
 					<span class="title">Today's To Do</span>
-					<span><i class="fas fa-sync-alt"></i></span>
+					<span class="reload"><i class="fas fa-sync-alt"></i></span>
 				</div>
-				<div class="container add-task flex-center">
-					<form action="/">
-						<input type="text" placeholder="Add to your list" />
+				<div class="container flex-center">
+					<form id="add-task" class="flex-center" action="/">
+						<input id="add-task-input" type="text" placeholder="Add to your list" />
+						<button><i class="fa fa-level-down-alt"></i></button>
 					</form>
 				</div>
-				<ul class="task-list-container"></ul>
-				<button class="container btn" type="button">Clear all completed</button>
+				<ul class="task-list-container">
+				</ul>
+				<button class="container btn clear-task" type="button">Clear all completed</button>
 			</div>
 		</section>
 	</body>

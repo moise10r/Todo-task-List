@@ -41,7 +41,7 @@ i {
 
 .task-list {
   flex-direction: column;
-  width: 35%;
+  width: 40%;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   border-radius: 0.5rem;
 }
@@ -58,17 +58,14 @@ i {
   width: 100%;
 }
 
-.task-list .add-task input {
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
-  font-size: 1rem;
-  font-weight: 300;
-}
-
-.task-list-container .task {
+.task-list #add-task {
   width: 100%;
   justify-content: space-between;
+}
+
+.task-list #add-task button {
+  padding: 0.6rem;
+  background-color: transparent;
 }
 
 .task-list-container .task i {
@@ -81,11 +78,45 @@ i {
   cursor: pointer;
 }
 
-.task-list-container .task .left label {
-  margin-left: 0.7rem;
+.task-list #add-task button i {
+  font-size: 0.8rem;
+  color: #ccc;
+  transform: rotate(90deg);
+}
+
+.task-list #add-task button i:hover {
+  color: rgb(104, 100, 100);
+}
+
+.task-list #add-task input {
+  flex: 1;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
   font-size: 1rem;
-  color: rgb(56, 54, 54);
-  cursor: pointer;
+  font-weight: 300;
+}
+
+.task-list-container .task {
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 0.9rem;
+  cursor: move;
+}
+
+.task-list-container .task .left {
+  width: 90%;
+}
+
+.task-list-container .task .left form {
+  width: 100%;
+}
+
+.task-list-container .task .left .edit-task {
+  padding-left: 0.7rem;
+  font-size: 1rem;
+  color: rgb(68, 67, 67);
+  flex: 1;
+  margin-left: 0.5rem;
 }
 
 .title {
@@ -105,4 +136,13 @@ i {
 .btn:hover {
   background-color: rgb(179, 177, 177);
   color: rgb(236, 235, 235);
+}
+
+.disabled {
+  font-size: 0.6rem;
+  font-style: italic;
+}
+
+.dragging {
+  border: 2px solid #0874fb;
 }
