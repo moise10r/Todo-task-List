@@ -59,3 +59,7 @@ export function addTask() {
   });
   return data;
 }
+
+export function deleteOne() {
+  console.log('delteone');
+}

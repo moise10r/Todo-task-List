@@ -21,6 +21,7 @@ input,
 button {
   border: none;
   outline: none;
+  background-color: transparent;
 }
 
 i {
@@ -151,4 +152,16 @@ i {
 
 .focus {
   background-color: #fffbec;
+}
+
+.task-list-container .task .right .far {
+  display: none;
+}
+
+.task-list-container .task.focus .right .far {
+  display: block;
+}
+
+.task-list-container .task.focus .right .fas {
+  display: none;
 }

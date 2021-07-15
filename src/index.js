@@ -26,13 +26,16 @@ getTask().forEach((task) => {
   </span>
   <span class="right">
     <i class="fas fa-ellipsis-v"></i>
+    <i class="far fa-trash-alt"></i>
   </span>
 </li>`;
 });
 
 export const task = document.querySelectorAll('.task');
 export const editTask = document.querySelectorAll('.edit-task');
+export const checkbox = document.querySelectorAll('.checkbox');
 const editForm = document.querySelectorAll('.edit-form');
+const reload = document.querySelector('.reload');
 
 editForm.forEach((form) => {
   form.addEventListener('submit', () => {
@@ -47,15 +50,20 @@ editForm.forEach((form) => {
   });
 });
 
-export const checkbox = document.querySelectorAll('.checkbox');
 window.addEventListener('load', () => {
   updateTask();
   dragDrop();
 });
 
-const reload = document.querySelector('.reload');
 reload.addEventListener('click', () => {
   location.reload();
+});
+
+task.forEach((item) => {
+  item.addEventListener('click', () => {
+    task.forEach((t) => t.classList.remove('focus'));
+    item.classList.add('focus');
+  });
 });
 
 deleteTask();
