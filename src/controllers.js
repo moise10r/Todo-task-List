@@ -3,7 +3,7 @@
 /* eslint-disable import/no-cycle */
 
 import { getTask } from './data';
-import { checkbox, editTask, task, deleteIcon } from './index';
+import { checkbox, editTask } from './index';
 
 export function updateTask() {
   checkbox.forEach((check) => {
