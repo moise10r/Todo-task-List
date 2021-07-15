@@ -109,6 +109,7 @@ i {
 
 .task-list-container .task .left form {
   width: 100%;
+  display: flex;
 }
 
 .task-list-container .task .left .edit-task {
@@ -141,8 +142,13 @@ i {
 .disabled {
   font-size: 0.6rem;
   font-style: italic;
+  text-decoration: line-through;
 }
 
 .dragging {
   border: 2px solid #0874fb;
+}
+
+.focus {
+  background-color: #fffbec;
 }

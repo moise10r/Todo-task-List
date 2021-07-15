@@ -1,8 +1,7 @@
-/* eslint-disable array-callback-return */
-/* eslint-disable import/no-cycle */
-/* eslint-disable no-restricted-globals */
 /* eslint-disable no-use-before-define */
+/* eslint-disable import/no-cycle */
 /* eslint-disable import/prefer-default-export */
+
 import { task, taskList } from './index';
 
 export function dragDrop() {

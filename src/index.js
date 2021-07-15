@@ -34,8 +34,7 @@ export const editTask = document.querySelectorAll('.edit-task');
 const editForm = document.querySelectorAll('.edit-form');
 
 editForm.forEach((form) => {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
+  form.addEventListener('submit', () => {
     editTask.forEach((taskList) => {
       getTask().forEach((task) => {
         if (taskList.dataset.indexNumber === task.index) {
