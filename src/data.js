@@ -20,20 +20,7 @@ addTaskForm.addEventListener('submit', () => {
   localStorage.setItem('Task-list', JSON.stringify(data));
 });
 
-const clearTask = document.querySelector('.clear-task');
-
-clearTask.addEventListener('click', () => {
-  if (data.length > 0) {
-    localStorage.clear('Task-list');
-    location.reload();
-  }
-});
-
-const reload = document.querySelector('.reload');
-reload.addEventListener('click', () => {
-  location.reload();
-});
-
+// import { addTask } from './updateTask';
 export function getTask() {
   return data.map((task) => task);
 }

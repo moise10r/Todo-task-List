@@ -1,8 +1,9 @@
+/* eslint-disable no-restricted-globals */
 /* eslint-disable import/no-cycle */
 /* eslint-disable import/prefer-default-export */
 import './style.css';
 import { getTask } from './data';
-import { updateTask } from './updateTask';
+import { updateTask, deleteTask } from './updateTask';
 import { dragDrop } from './dragDrop';
 
 export const taskList = document.querySelector('.task-list-container');
@@ -51,3 +52,10 @@ window.addEventListener('load', () => {
   updateTask();
   dragDrop();
 });
+
+const reload = document.querySelector('.reload');
+reload.addEventListener('click', () => {
+  location.reload();
+});
+
+deleteTask();
