@@ -3,7 +3,7 @@
 /* eslint-disable import/no-cycle */
 
 import { getTask } from './data';
-import { checkbox, editTask } from './index';
+import { checkbox, editTask, task, deleteIcon } from './index';
 
 export function updateTask() {
   checkbox.forEach((check) => {
@@ -60,6 +60,10 @@ export function addTask() {
   return data;
 }
 
-export function deleteOne() {
-  console.log('delteone');
+export function deleteOne(deleteIcon, taskId) {
+  deleteIcon.addEventListener('click', () => {
+    const filteredTask = getTask().filter((task) => task.index !== taskId);
+    localStorage.setItem('Task-list', JSON.stringify(filteredTask));
+    location.reload();
+  });
 }

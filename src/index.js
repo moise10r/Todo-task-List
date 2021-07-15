@@ -3,7 +3,7 @@
 /* eslint-disable import/prefer-default-export */
 import './style.css';
 import { getTask } from './data';
-import { updateTask, deleteTask } from './controllers';
+import { updateTask, deleteTask, deleteOne } from './controllers';
 import { dragDrop } from './dragDrop';
 
 export const taskList = document.querySelector('.task-list-container');
@@ -11,6 +11,7 @@ export const taskList = document.querySelector('.task-list-container');
 function getInputValue(task) {
   return task.description;
 }
+
 getTask().forEach((task) => {
   taskList.innerHTML += `<li class="container task flex-center" draggable="true">
   <span class="left flex-center">
@@ -67,3 +68,13 @@ task.forEach((item) => {
 });
 
 deleteTask();
+
+task.forEach((item) => {
+  item.addEventListener('click', () => {
+    if (item.classList.contains('focus')) {
+      const deleteIcon = item.querySelector('.far');
+      const taskId = item.querySelector('.checkbox').id;
+      deleteOne(deleteIcon, taskId);
+    }
+  });
+});
