@@ -3,7 +3,7 @@
 /* eslint-disable import/prefer-default-export */
 import './style.css';
 import { getTask } from './data';
-import { updateTask, deleteTask } from './updateTask';
+import { updateTask, deleteTask } from './controllers';
 import { dragDrop } from './dragDrop';
 
 export const taskList = document.querySelector('.task-list-container');
