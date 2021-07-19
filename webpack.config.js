@@ -2,31 +2,30 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
+  mode: 'development',
+  entry: {
+    index: './src/index.js',
   },
+  devtool: 'inline-source-map',
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Todo Tasks',
+      template: './src/index.html',
+      filename: 'main.html',
+    }),
+  ],
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-      },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-      filename: './index.html',
-    }),
-  ],
-  devServer: {
-    contentBase: './dist',
+  output: {
+    filename: 'bundle.js',
+    /* eslint-disable */
+    path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
 };
