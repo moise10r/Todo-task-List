@@ -7,7 +7,7 @@
 ![screen](https://user-images.githubusercontent.com/57562869/125509482-060712bf-5482-4058-8706-37bae6d952df.png)
 
 ## Live Demo
-[See live](https://moise10r.github.io/Todo-task-List/)
+[See live](https://condescending-swirles-acf184.netlify.app/?)
 
 ## Built With
 
