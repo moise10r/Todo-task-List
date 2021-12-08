@@ -11,7 +11,7 @@
 
 ## Built With
 
-- Javascript
+- Javascript.
 - CSS
 - Html
 
